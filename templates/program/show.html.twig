@@ -1,2 +1,5 @@
-<a href="{{ path('program_show', {id: 5}) }}"><h1> Program {{ id }}</h1></a>
+{% extends 'base.html.twig' %}
 
+{% block body %}
+    <a href="{{ path('program_show', {id}) }}"><h1> Program {{ id }}</h1></a>
+{% endblock %}
